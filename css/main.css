@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color_tope_1: rgb(28,209,176,1);
+    --color_tope_sup_inf: rgb(0,102,159,1);
+    --color_barra_enlaces: #001D2D;
+
+    /* 1116 */
+    --altura_pantalla:890px;
+    /*  */
+
+    --altura_tope_1:24px;
+    --altura_tope_enlaces:40px;
+    --altura_tope_inf:60px;
+    --altura_login:428px;
+    --altura_registro:574px;
+    --altura_contacto:633.79px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    text-decoration: none;
+}
+
+
+/* -------------------------- */
+/* HEADER */
+/* -------------------------- */
+
+.barra_tope{
+    height: var(--altura_tope_1);
+}
+h3{
+    background-color: var(--color_tope_1);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    font-style: normal;
+    padding: 3px 20px;
+}
+
+
+
+.barra_superior{  
+    background-color: var(--color_tope_sup_inf);
+    display:flex;
+    align-items: center;
+    height: 80px;
+}
+
+
+.gif{
+    padding:0 20px 0 10px;
+    display: inline-block;
+}
+
+
+.frase_bienvenida{
+    display: inline-block;
+    vertical-align: middle;
+}
+h1{
+    font-weight: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    font-style: normal;
+    color: white;
+    display: inline;
+    padding: 0 0 30px 0;  
+}
+
+.barra_enlaces{
+    height: var(--altura_tope_enlaces);
+    background-color: var(--color_barra_enlaces);
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.enlaces{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    /* padding: 3px 20px; */
+    color: white;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* -------------------------- */
+/* LOGIN */
+/* -------------------------- */
+
+main{
+    justify-content: center;
+    display: flex;
+}
+
+/* CONTENEDOR PADRE FORM */
+.contenedor_login{
+   
+    width: 620px;
+    height: var(--altura_login);
+    margin-top: calc((var(--altura_pantalla) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_login))))/2);
+    margin-bottom: calc((var(--altura_pantalla) + var(--altura_tope_inf) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_login))))/2); 
+}
+
+/* FRASE (((LOGIN))) */
+#frase_login_registro_contacto{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    padding-bottom: 55px;
+    color: #333333;
+}
+
+/* BARRAS FORM */
+input, select, option, textarea{
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    margin-bottom: 20px;
+    padding-left: 29px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+/* BOTONES DEL LOGIN */
+.enter_login{
+    margin: 39px 0 21px;
+    width: 100%;
+    height: 53.79px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    border: none;
+    text-align: center;
+}
+
+/* NOTA DE FORM */
+.account_note{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------- */
+/* REGISTER */
+/* -------------------------- */
+
+.contenedor_registro{
+
+    width: 620px;
+    height: var(--altura_registro);
+    margin-top: calc((var(--altura_pantalla) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_registro))))/2);
+    margin-bottom: calc( var(--altura_tope_inf) + ((var(--altura_pantalla) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_registro))))/2)); 
+}
+
+
+/* BOTONES DEL REGISTER */
+.padre_button{
+    display: flex;
+    justify-content: space-between;
+}
+.enter_register, .reset_register{
+    width: 48%;
+    height: 53.79px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    margin: 30px 0 21px;
+    border-radius: 23.011px;
+    border: none;
+    text-align: center;
+}
+.reset_register{
+    background: #888888;
+}
+.enter_register{
+    background: #1CD1B0;
+}
+
+
+/* -------------------------- */
+/* CONTACTO */
+/* -------------------------- */
+
+.contenedor_contacto{
+    width: 620px;
+    height: var(--altura_contacto);
+    margin-top: calc((var(--altura_pantalla) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_contacto))))/2);
+    margin-bottom: calc( var(--altura_tope_inf) + ((var(--altura_pantalla) - ((var(--altura_tope_1) + 80px + var(--altura_tope_inf) + var(--altura_contacto))))/2)); 
+}
+/* #frase_login_contacto{
+    padding-bottom: 50px;
+} */
+
+textarea{
+    height: 251px;
+}
+/* -------------------------- */
+/* FOOTER */
+/* -------------------------- */
+
+footer{
+    background-color: var(--color_tope_sup_inf);
+    text-align: center;
+    height: var(--altura_tope_inf);
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: 400;
+    /* Forma para centrar texto verticalmente */
+    position: fixed;
+    bottom: 0px;
+    /*  */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+    /*  */
+}
+
+.git{
+    color: azure;
+}
+
+.git:hover{
+    color: #f1d11e;
+}
+
