@@ -24,29 +24,29 @@
 }
 
 .fondo_batman{
-    background-image: url(/img/fondo_batman.jpg);
+    background-image: url("../img/fondo_batman.jpg");
     background-size: cover;
 }
 
 .fondo_superman{
-    background-image: url(/img/fondo_superman.jpg);
+    background-image: url("../img/fondo_superman.jpg");
     background-size: cover;
 }
 
 .fondo_ww{
-    background-image: url(/img/fondo_ww.jpg);
+    background-image: url("../img/fondo_ww.jpg");
     background-size: cover;
 }
 .fondo_flash{
-    background-image: url(/img/fondo_flash.jpg);
+    background-image: url("../img/fondo_flash.jpg");
     background-size: cover;
 }
 .fondo_aquaman{
-    background-image: url(/img/fondo_aquaman.jpg);
+    background-image: url("../img/fondo_aquaman.jpg");
     background-size: cover;
 }
 .fondo_zatana{
-    background-image: url(/img/fondo_zatana.png);
+    background-image: url("../img/fondo_zatana.png");
     background-size: cover;
 }
 
